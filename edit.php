@@ -5,10 +5,8 @@ if (!isset($_SESSION["user_name"])) {
 }
 include 'conn.php';
 
-
 $id = $_GET['id']; 
 $uid=$_SESSION["id"];
-
 $qry = mysqli_query($conn,"SELECT * FROM product WHERE id='$id'"); // select query
 
 $data = mysqli_fetch_array($qry); 

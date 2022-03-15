@@ -22,7 +22,6 @@ if(isset($_POST['submit']))
     // print_r($filename);
     $fileerror = $files['error'];
     $filetemp = $files['tmp_name'];
-
     $fileext = explode('.', $filename);
     $filecheck = strtolower(end($fileext));
     $fileextstored = array('png', 'jpg', 'jpeg');

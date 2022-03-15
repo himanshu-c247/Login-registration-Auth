@@ -27,7 +27,6 @@ if(isset($_POST['submit']))
     $filecheck = strtolower(end($fileext));
     $fileextstored = array('png', 'jpg', 'jpeg');
   
-	
     if (in_array($filecheck, $fileextstored)) {
         $destinationfile = 'upload/' . $filename;
         move_uploaded_file($filetemp, $destinationfile);
